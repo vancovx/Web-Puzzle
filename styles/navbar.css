@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .navbar{
@@ -30,33 +30,76 @@
 
 .cuerpo {
     background-color: #FFE8F3;
+    > div{
+      display: flex;
+      justify-content: center;
+    }
+} 
+
+/*ACERCA*/
+.acerca{
+  display: flex;
+}
+.Información{
+  font-family: "Averia Serif Libre", serif;
+  color: #00313d;
+  text-align: left;
+  padding: 0px 10px;
+  width: 40%;
+  
+  > p {
+    background-color: #f5c7de; 
+    padding: 13px;
+    margin: 5px 0px;
+  }
+
+}  
+.Documentación{
+  text-align: left;
+  margin: 10px;
+  font-family: "Averia Serif Libre", serif;
+  color: #00313d;
+}
+.Datos{
+  font-family: "Averia Serif Libre", serif;
+  color: #00313d;
+  display: grid;
+  width: 60%;
+  text-align: left;
 }
 
-.Pie {
+/*SECCIONES*/
+/*.puntuación{
+  > ul {
+
+  }
+}*/
+
+/*TITULO SECCIONES*/
+.secciones {
+    margin: 10px;
+    color: #00313d;
     background-color: #f5c7de;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    > p {
-        font-family: Arial;
-        color: #00313d;
-        margin: 0;
-  
-      > a {
-        text-decoration:underline;
-        color: #00313d;
-      }
+    padding: 10px; 
+    font-family: "Averia Serif Libre", serif;
+}
+
+/*FOOTER*/
+.Pie {
+  background-color: #f5c7de;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  > p {
+      font-family: Arial;
+      color: #00313d;
+      margin: 0;
+
+    > a {
+      text-decoration:underline;
+      color: #00313d;
     }
   }
-
-  .secciones {
-    margin: 10px;
-    color: white;
-    background-color: #f5c7de;
-    border: 2px solid #f5c7de; 
-    border-radius: 5px;
-    padding: 5px; 
-    font-family: "Averia Serif Libre", serif;
-  }
+}
 
 

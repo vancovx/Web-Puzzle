@@ -23,20 +23,20 @@
 		</div>
 	</header>
 
-	<div id="div-score" style="display:none">
+	<!--<div>
 		<section>
 			<h2>Marcador</h2>
 			<ul>
-				<li>Piezas desordenadas: <span id="score-pieces"></span></li>
-				<li>Movimientos realizados: <span id="score-movs"></span></li>
-				<li>Tiempo: <span id="score-time"></span></li>
+				<li>Jugadas realizadas: <span id="score-pieces"></span></li>
+				<li>Piezas correctas: <span id="score-movs"></span></li>
+				<li>Tiempo empleado: <span id="score-time"></span></li>
 			</ul>
 		</section>
-	</div>
+	</div>-->
 
 	<div>
-		<section class="secciones">
-			<h2> Juego </h2>
+		<section>
+			<h2 class="secciones"> Juego </h2>
             <label for="difficulty">Dificultad: </label>
 					<select id="difficulty" onchange="changeDifficulty(this.value);">
 						<option value="2">5x5</option>
@@ -46,13 +46,6 @@
 			<canvas id="cv01"></canvas>
 			<footer>
 				<input id="input-file" type="file" accept="image/*" onchange="loadImage();">
-			</footer>
-		</section>
-
-		<section class="secciones">
-			<h2>Puntuación</h2>
-			<canvas id="cv02"></canvas>
-			<footer>
 				<div>
 					<label for="stk-color">Color de las lineas: </label>
 					<input type="color" id="stk-color" value="#aa0000" onchange="changeStrokeColor(this.value);">
@@ -69,6 +62,34 @@
 					<button id="help-button" onclick="helpButton();" disabled>Ayuda</button>
 				</div>
 			</footer>
+		</section>
+
+
+		<section class="puntuación">
+			<h2 class="secciones">Puntuación</h2>	
+			<ul>
+				<li>Jugadas realizadas: <span id="score-pieces"></span></li>
+				<li>Piezas correctas: <span id="score-movs"></span></li>
+				<li>Tiempo empleado: <span id="score-time"></span></li>
+			</ul>
+			<!--<<canvas id="cv02"></canvas>
+			<footer>
+				<div>
+					<label for="stk-color">Color de las lineas: </label>
+					<input type="color" id="stk-color" value="#aa0000" onchange="changeStrokeColor(this.value);">
+					<label for="difficulty">Dificultad: </label>
+					<select id="difficulty" onchange="changeDifficulty(this.value);">
+						<option value="2">Baja</option>
+						<option value="3">Media</option>
+						<option value="4">Alta</option>
+					</select>
+				</div>
+				<div>
+					<button id="begin-button" onclick="beginGame();" disabled>Empezar</button>
+					<button id="end-button" onclick="endGame();" disabled>Terminar</button>
+					<button id="help-button" onclick="helpButton();" disabled>Ayuda</button>
+				</div>
+			</footer>-->
 		</section>
 	</div>
 
