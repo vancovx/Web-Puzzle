@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/body.css">
-	<script src="scripts.js"></script>
+	<script src="js/script1.js"></script>
 	
 </head>
 <body class="cuerpo">
@@ -22,81 +21,60 @@
 			<p>Consigue formar el puzzle lo más rápido posible</p>
 		</div>
 	</header>
-
-	<!--<div>
-		<section>
-			<h2>Marcador</h2>
-			<ul>
-				<li>Jugadas realizadas: <span id="score-pieces"></span></li>
-				<li>Piezas correctas: <span id="score-movs"></span></li>
-				<li>Tiempo empleado: <span id="score-time"></span></li>
-			</ul>
-		</section>
-	</div>-->
-
 	<div>
 		<section>
 			<h2 class="secciones"> Juego </h2>
-            <label for="difficulty">Dificultad: </label>
-					<select id="difficulty" onchange="changeDifficulty(this.value);">
-						<option value="2">5x5</option>
-						<option value="3">7x7</option>
-						<option value="4">10x10</option>
-					</select>
-			<canvas id="cv01"></canvas>
-			<footer>
-				<input id="input-file" type="file" accept="image/*" onchange="loadImage();">
-				<div>
-					<label for="stk-color">Color de las lineas: </label>
-					<input type="color" id="stk-color" value="#aa0000" onchange="changeStrokeColor(this.value);">
-					<label for="difficulty">Dificultad: </label>
-					<select id="difficulty" onchange="changeDifficulty(this.value);">
-						<option value="2">Baja</option>
-						<option value="3">Media</option>
-						<option value="4">Alta</option>
-					</select>
-				</div>
-				<div>
-					<button id="begin-button" onclick="beginGame();" disabled>Empezar</button>
-					<button id="end-button" onclick="endGame();" disabled>Terminar</button>
-					<button id="help-button" onclick="helpButton();" disabled>Ayuda</button>
-				</div>
-			</footer>
+			<div class="juego">
+				<div class="dificultad">
+					<p>Dificultad: </p>
+					<label><input  id="difi1" type="radio" name="difi" onclick="divisiones(5)"> 5x5 </label>
+					<label><input  id="difi2" type="radio" name="difi" onclick="divisiones(7)"> 7x7 </label>
+					<label><input  id="difi3" type="radio" name="difi" onclick="divisiones(10)"> 10x10 </label>
+				</div>	
+				
+				<div class="tipo">
+					<label><input type="radio" id="type-image" name="tipo" onclick="verPuzzle('imagen')" checked> Imagen </label>
+        			<label><input type="radio" id="type-puzzle" name="tipo" onclick="verPuzzle('puzzle')" disabled> Puzzle </label>
+				</div>	
+					
+				<canvas id="cv1"></canvas>
+				<canvas id="cv2" ></canvas>
+				<footer>
+					<div>
+						<button id="cargar" onclick="cargarImagen();">Cargar imagen</button>
+						<button id="comenzar" onclick="comenzarJuego();" disabled>Empezar</button>
+						<button id="terminar" onclick="endGame();" disabled>Terminar</button>
+					</div>
+				</footer>
+
+			</div>
+            
 		</section>
 
 
 		<section class="puntuación">
 			<h2 class="secciones">Puntuación</h2>	
 			<ul>
-				<li>Jugadas realizadas: <span id="score-pieces"></span></li>
-				<li>Piezas correctas: <span id="score-movs"></span></li>
-				<li>Tiempo empleado: <span id="score-time"></span></li>
+				<li> Jugadas realizadas: <span id="score-pieces"> 0 </span></li>
+				<li> Piezas correctas: <span id="score-movs"> 0 </span></li>
+				<li> Tiempo empleado: <span id="tiempo"> 0m 0s</span></li>
 			</ul>
-			<!--<<canvas id="cv02"></canvas>
-			<footer>
-				<div>
-					<label for="stk-color">Color de las lineas: </label>
-					<input type="color" id="stk-color" value="#aa0000" onchange="changeStrokeColor(this.value);">
-					<label for="difficulty">Dificultad: </label>
-					<select id="difficulty" onchange="changeDifficulty(this.value);">
-						<option value="2">Baja</option>
-						<option value="3">Media</option>
-						<option value="4">Alta</option>
-					</select>
-				</div>
-				<div>
-					<button id="begin-button" onclick="beginGame();" disabled>Empezar</button>
-					<button id="end-button" onclick="endGame();" disabled>Terminar</button>
-					<button id="help-button" onclick="helpButton();" disabled>Ayuda</button>
-				</div>
-			</footer>-->
 		</section>
+	</div>
+	<div id="errorModal" class="modal" style="display:none;">
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  <p id="errorMessage"></p>
+		</div>
 	</div>
 
 	<footer class = "Pie">
         <p>© <a href="acerca.html">Vanessa Covrig</a> <time datetime="2024-03-10"> 15 de mayo de 2024</time></p>
         <p> Práctica 3 </p>
       </footer>
-	<script>loadCanvas();</script>
+	<script>
+	prepararCanvas();
+	loadPage();
+	</script>
 </body>
 </html>
