@@ -322,7 +322,8 @@ function comenzarJuego(){
     document.getElementById('difi2').disabled = true;
     document.getElementById('difi3').disabled = true;
     document.getElementById('terminar').disabled = false;
-    
+
+    //Obtenemos los canvas para recuperar información si es necesario
     sessionStorage.setItem('gameStarted', true);
     prepararPuzzle();
     dividir();
@@ -340,6 +341,7 @@ function comenzarJuego(){
     // Actualiza el tiempo transcurrido cada segundo
     let temporizador = setInterval(function() {
         tiempoTranscurrido = Math.floor((new Date() - tiempoInicio) / 1000); // Calcula el tiempo transcurrido en segundos
+        sessionStorage.setItem('tiempoTranscurrido', tiempoTranscurrido);
         let minutos = Math.floor(tiempoTranscurrido / 60); // Calcula los minutos
         let segundos = tiempoTranscurrido % 60; // Calcula los segundos restantes
         document.getElementById('tiempo').textContent = minutos + 'm ' + segundos + 's'; // Actualiza el tiempo en la interfaz
@@ -352,7 +354,7 @@ function terminarJuego(){
     let minutosTardados = Math.floor(tiempoTardado / (1000 * 60)); // Calcular minutos
     let segundosTardados = Math.floor((tiempoTardado / 1000) % 60); // Calcular segundos restantes
 
-    showModalRedirigir('Partida finalizada: Has tardado ' + minutosTardados + ' minutos y ' + segundosTardados + ' segundos. Has realizado '  + sessionStorage.getItem('jugadas') +  ' jugadas');
+    showModalRedirigir('Partida finalizada: Has tardado ' + minutosTardados + ' minutos y ' + segundosTardados + ' segundos y has realizado '  + sessionStorage.getItem('jugadas') +  ' jugadas.');
     sessionStorage.clear();
 
 }
@@ -536,15 +538,17 @@ function piezasDesordenadas() {
 
 //CARGA DE PAGINA INICIAL
 function loadPage(){
+    //Comprobamos si hay una partida guardada
     if(sessionStorage['imagen'] || sessionStorage['jugadas'] || sessionStorage['cv2State'] || sessionStorage['tiempoInicio']){
+        
 
-    }else{
+    }else{//No hay ninguna partida guardada
         showModal("Elige la imagen que quieras e intenta montar el puzzle en el menor tiempo posible. Tienes 3 niveles de dificultad en los que intentarlo.");
     }
     
 }
 
-//Función para MODALES
+//Funciónes para MODALES
 function showModal(message) {
     //Accedemos a los elementos del HTML modal
     const modal = document.getElementById('errorModal');
