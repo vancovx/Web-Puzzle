@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <title> Puzzle Race </title>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<script src="js/script1.js"></script>
 	
 </head>
@@ -27,7 +27,7 @@
 			<div class="juego">
 				<div class="dificultad">
 					<p>Dificultad: </p>
-					<label><input  id="difi1" type="radio" name="difi" onclick="divisiones(5)"> 5x5 </label>
+					<label><input  id="difi1" type="radio" name="difi" onclick="divisiones(5)" checked> 5x5 </label>
 					<label><input  id="difi2" type="radio" name="difi" onclick="divisiones(7)"> 7x7 </label>
 					<label><input  id="difi3" type="radio" name="difi" onclick="divisiones(10)"> 10x10 </label>
 				</div>	
@@ -43,7 +43,7 @@
 					<div>
 						<button id="cargar" onclick="cargarImagen();">Cargar imagen</button>
 						<button id="comenzar" onclick="comenzarJuego();" disabled>Empezar</button>
-						<button id="terminar" onclick="endGame();" disabled>Terminar</button>
+						<button id="terminar" onclick="terminarJuego();" disabled>Terminar</button>
 					</div>
 				</footer>
 
@@ -55,7 +55,7 @@
 		<section class="puntuación">
 			<h2 class="secciones">Puntuación</h2>	
 			<ul>
-				<li> Jugadas realizadas: <span id="score-pieces"> 0 </span></li>
+				<li> Jugadas realizadas: <span id="jugadas"> 0 </span></li>
 				<li> Piezas correctas: <span id="score-movs"> 0 </span></li>
 				<li> Tiempo empleado: <span id="tiempo"> 0m 0s</span></li>
 			</ul>
@@ -73,8 +73,12 @@
         <p> Práctica 3 </p>
       </footer>
 	<script>
-	prepararCanvas();
-	loadPage();
+		datosPartida();
+		prepararCanvas();
+		prepararDnD();
+		cargarImagenAlClick();
+		
+		loadPage();
 	</script>
 </body>
 </html>
