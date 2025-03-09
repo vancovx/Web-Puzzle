@@ -24,25 +24,25 @@ styles/: Carpeta adicional para estilos específicos.​
 acerca.html: Página con información adicional sobre el proyecto.​
 index.html: Página principal donde se encuentra el juego.
 
-## 🎮 Cómo Jugar
-
-1️⃣ **Acceder al Juego**: Abre el archivo `index.html` en tu navegador preferido.  
-2️⃣ **Interacción**: Utiliza el ratón o el tacto (en dispositivos compatibles) para mover las piezas del puzzle.  
-3️⃣ **Objetivo**: Coloca todas las piezas en la posición correcta para completar la imagen.  
 
 ## 📸 Capturas de Pantalla
 
 **
 
 ## 🏗️ Instalación y Uso
-
-### 1️⃣ Clonar el Repositorio
+### Clonar el Repositorio
 
 ```sh
 git clone https://github.com/vancovx/Web-Puzzle.git
 cd Web-Puzzle
 ```
 
-👥 Autor
+##  Cómo Jugar
+1️⃣ **Acceder al Juego**: Abre el archivo `index.html` en tu navegador preferido.  
+2️⃣ **Interacción**: Utiliza el ratón o el tacto (en dispositivos compatibles) para mover las piezas del puzzle.  
+3️⃣ **Objetivo**: Coloca todas las piezas en la posición correcta para completar la imagen.  
+
+
+## 👥 Autor
 Vanessa Covrig
 
