@@ -43,5 +43,6 @@ cd Web-Puzzle
 3️⃣ **Objetivo**: Coloca todas las piezas en la posición correcta para completar la imagen.  
 
 
-## 👥 Autor -> Vanessa Covrig
-
+## Contacto
+Vanessa Covrig - vanessacovrig7@gmail.com
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
