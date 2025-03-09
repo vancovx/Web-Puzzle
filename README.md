@@ -37,7 +37,7 @@ git clone https://github.com/vancovx/Web-Puzzle.git
 cd Web-Puzzle
 ```
 
-##  Cómo Jugar
+### Cómo Jugar
 1️⃣ **Acceder al Juego**: Abre el archivo `index.html` en tu navegador preferido.  
 2️⃣ **Interacción**: Utiliza el ratón o el tacto (en dispositivos compatibles) para mover las piezas del puzzle.  
 3️⃣ **Objetivo**: Coloca todas las piezas en la posición correcta para completar la imagen.  
