@@ -25,9 +25,9 @@ Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **
 - index.html: Página principal donde se encuentra el juego.
 
 
-## 📸 Capturas de Pantalla
+## 📸 Captura de Pantalla
 
-**
+*(img/previsualizacion.png)*
 
 ## 🏗️ Instalación y Uso
 ### Clonar el Repositorio
