@@ -1,6 +1,7 @@
 # 🧩 Web Puzzle
 
 Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **JavaScript**. 
+
 ![Previsualización del Juego](img/puzzle.png)
 
 ## Tecnologías Utilizadas
@@ -8,7 +9,7 @@ Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **
 - **CSS3**: Estilos y diseño visual.
 - **JavaScript (ES6+)**: Lógica del juego y funcionalidades interactivas.
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 - css/: Contiene los archivos de estilos CSS.​
 - font/: Incluye las fuentes utilizadas en el proyecto.​
 - img/: Almacena las imágenes necesarias para el juego.​
