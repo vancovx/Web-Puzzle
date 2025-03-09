@@ -14,6 +14,10 @@ Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **
 - **CSS3**: Estilos y diseño visual.
 - **JavaScript (ES6+)**: Lógica del juego y funcionalidades interactivas.
 
+## 📸 Captura de Pantalla
+
+![Previsualización del Juego](img/puzzle.png)
+
 ## 📂 Estructura del Proyecto
 
 - css/: Contiene los archivos de estilos CSS.​
@@ -24,10 +28,6 @@ Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **
 - acerca.html: Página con información adicional sobre el proyecto.​
 - index.html: Página principal donde se encuentra el juego.
 
-
-## 📸 Captura de Pantalla
-
-![Previsualización del Juego](img/puzzle.png)
 
 ## 🏗️ Instalación y Uso
 ### Clonar el Repositorio
