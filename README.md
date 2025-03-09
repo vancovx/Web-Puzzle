@@ -1,25 +1,14 @@
 # 🧩 Web Puzzle
 
 Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **JavaScript**. 
+![Previsualización del Juego](img/puzzle.png)
 
-## 🚀 Características
-
-- **Interfaz Interactiva**: Interactuar directamente con el puzzle mediante funcionalidades de arrastrar y soltar.
-- **Diseño Responsivo**: Adaptable a diferentes dispositivos y tamaños de pantalla.
-- **Animaciones Suaves**: Implementadas con CSS para transiciones y movimientos fluidos.
-
-## 🛠️ Tecnologías Utilizadas
-
+## Tecnologías Utilizadas
 - **HTML5**: Estructura y contenido del juego.
 - **CSS3**: Estilos y diseño visual.
 - **JavaScript (ES6+)**: Lógica del juego y funcionalidades interactivas.
 
-## 📸 Captura de Pantalla
-
-![Previsualización del Juego](img/puzzle.png)
-
 ## 📂 Estructura del Proyecto
-
 - css/: Contiene los archivos de estilos CSS.​
 - font/: Incluye las fuentes utilizadas en el proyecto.​
 - img/: Almacena las imágenes necesarias para el juego.​
@@ -29,7 +18,7 @@ Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **
 - index.html: Página principal donde se encuentra el juego.
 
 
-## 🏗️ Instalación y Uso
+## Instalación y Uso
 ### Clonar el Repositorio
 
 ```sh
@@ -42,7 +31,5 @@ cd Web-Puzzle
 2️⃣ **Interacción**: Utiliza el ratón o el tacto (en dispositivos compatibles) para mover las piezas del puzzle.  
 3️⃣ **Objetivo**: Coloca todas las piezas en la posición correcta para completar la imagen.  
 
-
 ## Contacto
 Vanessa Covrig - vanessacovrig7@gmail.com
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
