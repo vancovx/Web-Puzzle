@@ -4,8 +4,8 @@ Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **
 
 ## 🚀 Características
 
-- **Interfaz Interactiva**: Permite a los usuarios interactuar directamente con el puzzle mediante funcionalidades de arrastrar y soltar.
-- **Diseño Responsivo**: Adaptable a diferentes dispositivos y tamaños de pantalla, garantizando una experiencia óptima tanto en móviles como en desktops.
+- **Interfaz Interactiva**: Interactuar directamente con el puzzle mediante funcionalidades de arrastrar y soltar.
+- **Diseño Responsivo**: Adaptable a diferentes dispositivos y tamaños de pantalla.
 - **Animaciones Suaves**: Implementadas con CSS para transiciones y movimientos fluidos.
 
 ## 🛠️ Tecnologías Utilizadas
@@ -16,13 +16,13 @@ Juego de rompecabezas interactivo desarrollado utilizando **HTML**, **CSS** y **
 
 ## 📂 Estructura del Proyecto
 
-css/: Contiene los archivos de estilos CSS.​
-font/: Incluye las fuentes utilizadas en el proyecto.​
-img/: Almacena las imágenes necesarias para el juego.​
-js/: Contiene los scripts de JavaScript que manejan la lógica del juego.​
-styles/: Carpeta adicional para estilos específicos.​
-acerca.html: Página con información adicional sobre el proyecto.​
-index.html: Página principal donde se encuentra el juego.
+- css/: Contiene los archivos de estilos CSS.​
+- font/: Incluye las fuentes utilizadas en el proyecto.​
+- img/: Almacena las imágenes necesarias para el juego.​
+- js/: Contiene los scripts de JavaScript que manejan la lógica del juego.​
+- styles/: Carpeta adicional para estilos específicos.​
+- acerca.html: Página con información adicional sobre el proyecto.​
+- index.html: Página principal donde se encuentra el juego.
 
 
 ## 📸 Capturas de Pantalla
@@ -43,6 +43,5 @@ cd Web-Puzzle
 3️⃣ **Objetivo**: Coloca todas las piezas en la posición correcta para completar la imagen.  
 
 
-## 👥 Autor
-Vanessa Covrig
+## 👥 Autor -> Vanessa Covrig
 
